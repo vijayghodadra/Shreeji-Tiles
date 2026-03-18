@@ -58,9 +58,9 @@ const Header = () => {
         </nav>
 
         <div className={styles.contact}>
-          <a href="tel:+919909713197" className={styles.phoneLink}>
+          <a href="tel:+919898713167" className={styles.phoneLink}>
             <Phone size={18} />
-            <span>+91 99097 13197</span>
+            <span>+91 98987 13167</span>
           </a>
         </div>
 
