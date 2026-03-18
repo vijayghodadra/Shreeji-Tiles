@@ -1,0 +1,105 @@
+.testimonialsSection {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.header {
+  margin-bottom: 50px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header h2 {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+}
+
+.header p {
+  font-family: var(--font-sans);
+  color: #666;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+  text-align: left;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  border: 1px solid rgba(0,0,0,0.02);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.quoteIcon {
+  color: #e2e8f0;
+  margin-bottom: 10px;
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-family: var(--font-sans);
+  font-style: italic;
+  color: #555;
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-bottom: 25px;
+  flex-grow: 1;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-top: 1px solid #f0f0f0;
+  padding-top: 20px;
+}
+
+.customerInfo h4 {
+  font-family: var(--font-serif);
+  color: #1a1a1a;
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.customerInfo span {
+  color: #888;
+  font-size: 0.85rem;
+  font-family: var(--font-sans);
+}
+
+.serviceTag {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 0.85rem;
+  font-family: var(--font-sans);
+}
+
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

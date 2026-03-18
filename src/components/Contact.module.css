@@ -1,0 +1,204 @@
+.contactSection {
+  padding: 80px 0;
+  background-color: #fafbfc;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header h2 {
+  font-family: var(--font-serif);
+  font-size: 2.75rem;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+}
+
+.header p {
+  font-family: var(--font-sans);
+  color: #666;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.sectionTitle {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: #1a1a1a;
+  margin-bottom: 30px;
+}
+
+.infoList {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.infoItem {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.iconBox {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #eef2f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #555;
+  flex-shrink: 0;
+}
+
+.infoItem h4 {
+  font-size: 0.95rem;
+  color: #1a1a1a;
+  margin-bottom: 4px;
+}
+
+.infoItem p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.whatsappBtn {
+  width: 100%;
+  background-color: #25D366;
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(37, 211, 102, 0.2);
+}
+
+.whatsappBtn:hover {
+  background-color: #1EBE5D;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(37, 211, 102, 0.3);
+}
+
+/* Form Styles */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.inputRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inputGroup label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.inputGroup input,
+.inputGroup select,
+.inputGroup textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #e2e8f0;
+  background: transparent;
+  padding: 8px 0;
+  font-size: 0.9rem;
+  color: #333;
+  transition: border-color 0.3s;
+  font-family: var(--font-sans);
+}
+
+.inputGroup input::placeholder,
+.inputGroup textarea::placeholder {
+  color: #a0aec0;
+  font-size: 0.9rem;
+}
+
+.inputGroup input:focus,
+.inputGroup select:focus,
+.inputGroup textarea:focus {
+  outline: none;
+  border-bottom-color: var(--primary);
+}
+
+.inputGroup textarea {
+  resize: vertical;
+}
+
+.submitBtn {
+  width: 100%;
+  background-color: var(--primary); /* Deep blue to match image */
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.submitBtn:hover {
+  background-color: #0b1c31; 
+}
+
+.mapContainer {
+  margin-top: 30px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.footerText {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #666;
+  font-family: var(--font-sans);
+}
+
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .inputRow {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,108 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.25rem 0;
+  z-index: 1000;
+  transition: all 0.4s ease;
+  background: #ffffff;
+  border-bottom: 2px solid #3d2b3d; /* Dark matching top border from image */
+}
+
+.scrolled {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 1rem 0;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+}
+
+.logoImage {
+  max-width: 150px;
+  height: auto;
+  object-fit: contain;
+  filter: invert(1); /* Invert to make the black logo look black on white navbar as per image */
+  background: #000000;
+  padding: 4px;
+}
+
+.nav {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.navLink {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1a1a1a;
+  opacity: 0.9;
+}
+
+.navLink:hover {
+  opacity: 1;
+  color: #3d2b3d;
+}
+
+.phoneLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  border: 1.5px solid #eaeaea;
+  padding: 0.6rem 1.5rem;
+  border-radius: 50px;
+}
+
+.phoneLink:hover {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.menuToggle {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid var(--muted);
+  }
+
+  .navOpen {
+    display: flex;
+  }
+
+  .menuToggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact {
+    display: none;
+  }
+}
